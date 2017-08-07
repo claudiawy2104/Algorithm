@@ -14,4 +14,10 @@ public class LargestSquareOf1s {
 		}
 		return result;
 	}
+	
+	public static void main(String[] args) {
+		int[][] matrix = {{0, 0, 0, 0}, {1, 1, 1, 1}, {0, 1, 1, 1}, {1, 0, 1, 1}};
+		LargestSquareOf1s test = new LargestSquareOf1s();
+		System.out.println(test.largest(matrix));
+	}
 }

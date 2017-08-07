@@ -37,13 +37,4 @@ public class MergeSort {
 			array[start++] = helper[i++];
 		}
 	}
-	
-	public static void main(String[] args) {
-		MergeSort test = new MergeSort();
-		int[] array = {2, 1, -3};
-		array = test.mergeSort(array);
-		for (int i: array) {
-			System.out.println(i);
-		}
-	}
 }

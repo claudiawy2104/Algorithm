@@ -34,13 +34,5 @@ public class QuickSort {
 		array[i] = array[j];
 		array[j] = temp;
 	}
-	
-	public static void main(String[] args) {
-		QuickSort test = new QuickSort();
-		int[] array = {20, 1, -3};
-		array = test.quickSort(array);
-		for (int i: array) {
-			System.out.println(i);
-		}
-	}
+
 }
