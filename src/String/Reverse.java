@@ -18,6 +18,8 @@ public class Reverse {
 			if (index < array.length) {
 				array[index++] = ' ';
 			}
+			start = findChar(array, end + 1);
+			end = start;
 		}
 		if (array[index - 1] == ' ') {
 			index--;
@@ -49,8 +51,8 @@ public class Reverse {
 	}
 	
 	public static void main(String[] args) {
-		String input = "an apple";
-		AdjacentI test = new AdjacentI();
+		String input = "an apple    ";
+		Reverse test = new Reverse();
 		System.out.println(test.reverseWords(input));
 	}
 }
